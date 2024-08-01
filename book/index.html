@@ -88,7 +88,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="chapter_1.html" class="active"><strong aria-hidden="true">1.</strong> Java</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="chapter_1.html"><strong aria-hidden="true">1.1.</strong> 歴史</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="java/01_overview.html" class="active"><strong aria-hidden="true">1.</strong> Java</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
@@ -173,16 +173,85 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="chapter-1"><a class="header" href="#chapter-1">Chapter 1</a></h1>
+                        <h1 id="javaとは"><a class="header" href="#javaとは">Javaとは？</a></h1>
+<p>Javaは、1995年にサン・マイクロシステムズ（現オラクル）によって開発された、オブジェクト指向のプログラミング言語です。Javaは「Write Once, Run Anywhere (WORA)」というコンセプトを持ち、一度コードを書けばどのプラットフォームでも動作することを目指しています。</p>
+<h1 id="javaの歴史や思想"><a class="header" href="#javaの歴史や思想">Javaの歴史や思想</a></h1>
+<p>Javaの歴史と思想は、その誕生から現在に至るまで、多くの技術革新と進化を経てきました。以下にJavaの歴史的背景と設計思想について詳しく説明します。</p>
+<h3 id="1-javaの歴史"><a class="header" href="#1-javaの歴史">1. Javaの歴史</a></h3>
+<p><strong>1991年: プロジェクト「グリーン」</strong></p>
+<ul>
+<li>サン・マイクロシステムズのジェームズ・ゴスリン、マイク・シェリダン、パトリック・ノートンを中心としたチームが、家庭用電化製品のためのプログラミング言語を開発するプロジェクト「グリーン」を開始しました。</li>
+<li>最初に開発された言語は「Oak」と名付けられましたが、商標の問題で「Java」に改名されました。</li>
+</ul>
+<p><strong>1995年: Java 1.0のリリース</strong></p>
+<ul>
+<li>Java 1.0が正式にリリースされました。これにより、「Write Once, Run Anywhere (WORA)」の理念が広く知られるようになりました。</li>
+<li>Netscape NavigatorにJavaランタイムが統合され、Webブラウザ上でJavaアプレットを実行することが可能になりました。</li>
+</ul>
+<p><strong>1997年: Java 1.1</strong></p>
+<ul>
+<li>イベントデリゲーションモデルの導入や内部クラスのサポートなど、言語仕様の強化が行われました。</li>
+<li>JDBC（Java Database Connectivity）APIが追加され、データベースとの連携が容易になりました。</li>
+</ul>
+<p><strong>1998年: Java 2 (J2SE 1.2)</strong></p>
+<ul>
+<li>Java 2 Platform, Standard Edition (J2SE) 1.2がリリースされました。このバージョンからJava 2としてブランド名が変更されました。</li>
+<li>Swingライブラリが追加され、よりリッチなGUIアプリケーションの開発が可能になりました。</li>
+<li>Java Plug-inとJava Web Startが導入され、Webアプリケーションの配布と実行が簡素化されました。</li>
+</ul>
+<p><strong>2004年: Java 5.0 (J2SE 5.0)</strong></p>
+<ul>
+<li>ジェネリクス、アノテーション、列挙型、自動ボクシング/アンボクシングなど、言語の大幅な拡張が行われました。</li>
+<li>J2SEはJava SEに名称が変更され、エンタープライズエディション（Java EE）とマイクロエディション（Java ME）も含まれるようになりました。</li>
+</ul>
+<p><strong>2009年: OracleによるSun Microsystemsの買収</strong></p>
+<ul>
+<li>サン・マイクロシステムズがオラクルに買収され、Javaの開発とサポートがオラクルに引き継がれました。</li>
+<li>オラクルはJavaの新しいリリースサイクルを導入し、より頻繁なアップデートと新機能の追加を行うようになりました。</li>
+</ul>
+<p><strong>2014年: Java 8</strong></p>
+<ul>
+<li>ラムダ式、ストリームAPI、日付と時間APIの改善など、重要な新機能が導入されました。</li>
+<li>Java 8は、現代的なプログラミングパラダイムに対応するための大きな進化を遂げました。</li>
+</ul>
+<p><strong>2017年以降: 新しいリリースサイクル</strong></p>
+<ul>
+<li>オラクルは6か月ごとの新しいリリースサイクルを採用し、より迅速な機能追加と改善が行われるようになりました。</li>
+<li>LTS（Long-Term Support）バージョンが導入され、企業向けに安定したリリースを提供しています。</li>
+</ul>
+<h3 id="2-javaの設計思想"><a class="header" href="#2-javaの設計思想">2. Javaの設計思想</a></h3>
+<p><strong>プラットフォーム独立性</strong></p>
+<ul>
+<li>Javaの最も重要な思想は「Write Once, Run Anywhere (WORA)」です。Javaプログラムはバイトコードにコンパイルされ、JVM上で実行されるため、異なるプラットフォームでも同じコードが動作します。</li>
+</ul>
+<p><strong>シンプルさと使いやすさ</strong></p>
+<ul>
+<li>C++の複雑さを避け、プログラミングを簡単にするために設計されました。メモリ管理を自動化するガベージコレクションや、複雑なポインタ操作の排除などがその例です。</li>
+</ul>
+<p><strong>オブジェクト指向</strong></p>
+<ul>
+<li>Javaは完全なオブジェクト指向プログラミング言語です。クラスとオブジェクトを基本単位とし、再利用性と拡張性を高めるための継承、カプセル化、ポリモーフィズムなどの概念を強力にサポートしています。</li>
+</ul>
+<p><strong>セキュリティ</strong></p>
+<ul>
+<li>Javaはネットワーク環境での使用を前提に設計されており、セキュリティ機能が強化されています。サンドボックスモデルを採用し、悪意のあるコードからシステムを保護します。</li>
+</ul>
+<p><strong>分散処理</strong></p>
+<ul>
+<li>Javaは分散システムの開発を容易にするための機能を持っています。RMI（Remote Method Invocation）やCORBAなど、分散オブジェクト技術をサポートしています。</li>
+</ul>
+<p><strong>マルチスレッド</strong></p>
+<ul>
+<li>Javaはマルチスレッドプログラミングをサポートしており、複数のスレッドを使って並行処理を行うことができます。これにより、効率的で応答性の高いアプリケーションを開発できます。</li>
+</ul>
+<p>Javaの歴史と思想は、その強力な設計と柔軟性により、多くの分野で幅広く使用されてきました。Javaは今後も進化を続け、最新の技術トレンドに対応しながら、多くの開発者にとって重要なツールであり続けるでしょう。</p>
+<h1 id="javaの世界"><a class="header" href="#javaの世界">Javaの世界</a></h1>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
 
-                            <a rel="next prefetch" href="chapter_1.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                                <i class="fa fa-angle-right"></i>
-                            </a>
 
                         <div style="clear: both"></div>
                     </nav>
@@ -191,29 +260,10 @@
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
 
-                    <a rel="next prefetch" href="chapter_1.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                        <i class="fa fa-angle-right"></i>
-                    </a>
             </nav>
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 
